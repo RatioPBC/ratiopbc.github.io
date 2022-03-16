@@ -19,7 +19,7 @@
 
 <body>
 
-  <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
+  <div class="mx-auto max-w-7xl sm:px-6 lg:px-8">
     <!-- BEGIN section 1 -->
     <div class="overflow-hidden relative bg-white">
       <div class="relative pt-6 pb-16 sm:pb-24">
@@ -62,21 +62,23 @@
     <!-- BEGIN section 2 -->
 
     <!-- This example requires Tailwind CSS v2.0+ -->
-    <div class="relative bg-white py-16 sm:py-24 lg:py-32">
-      <div class="mx-auto max-w-md px-4 text-center sm:max-w-3xl sm:px-6 lg:max-w-7xl lg:px-8">
-        <h2 class="text-3xl font-extrabold tracking-tight sm:text-4xl text-gray-800">Who We Serve</h2>
+    <div class="relative py-16 bg-white sm:py-24 lg:py-32">
+      <div class="px-4 mx-auto max-w-md text-center sm:px-6 sm:max-w-3xl lg:px-8 lg:max-w-7xl">
+        <h2 class="text-3xl font-extrabold tracking-tight text-gray-800 sm:text-4xl">Who We Serve</h2>
         <div class="mt-12">
           <div class="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
             <div class="pt-6">
-              <div class="flow-root rounded-lg px-6 pb-8">
+              <div class="flow-root px-6 pb-8 rounded-lg">
                 <div class="-mt-6">
                   <div>
-                    <span class="inline-flex items-center justify-center rounded-md bg-yellow-500 p-3 shadow-lg">
-                      <!-- Heroicon name: outline/cloud-upload -->
-                      <svg class="h-6 w-6 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                    <span class="inline-flex justify-center items-center p-2 bg-yellow-500 rounded-md shadow-lg">
+                      <!-- https://healthicons.org/icon/filled/places/ministry_of_health -->
+                      <svg class="w-8 h-8 text-white" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"
                         stroke="currentColor" aria-hidden="true">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                          d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9M15 13l-3-3m0 0l-3 3m3-3v12" />
+                        <Path fill-rule="evenodd" clip-rule="evenodd" stroke-width="2"
+                          d="M23.3754 5.21913C23.7406 4.92696 24.2595 4.92696 24.6248 5.21913L39.3508 17H42V23H6V17H8.64928L23.3754 5.21913ZM25 10V12H27V14H25V16H23V14H21V12H23V10H25Z" />
+                        <path fill-rule="evenodd" clip-rule="evenodd" stroke-width="2"
+                          d="M24 25C21.7909 25 20 26.7909 20 29V37H14V33H12V25H8V33H6V37H4V43H44V37H42V33H40V25H36V33H34V37H28V29C28 26.7909 26.2091 25 24 25ZM24 27C25.1046 27 26 27.8954 26 29V37H22V29C22 27.8954 22.8954 27 24 27Z" />
                       </svg>
                     </span>
                   </div>
@@ -89,15 +91,28 @@
             </div>
 
             <div class="pt-6">
-              <div class="flow-root rounded-lg px-6 pb-8">
+              <div class="flow-root px-6 pb-8 rounded-lg">
                 <div class="-mt-6">
                   <div>
-                    <span class="inline-flex items-center justify-center rounded-md bg-yellow-500 p-3 shadow-lg">
-                      <!-- Heroicon name: outline/lock-closed -->
-                      <svg class="h-6 w-6 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                        stroke="currentColor" aria-hidden="true">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                          d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
+                    <span class="inline-flex justify-center items-center p-2 bg-yellow-500 rounded-md shadow-lg">
+                      <!-- https://healthicons.org/icon/outline/places/ambulatory_clinic -->
+                      <svg class="w-8 h-8 text-white" viewBox="0 0 48 48" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                          d="M13.0193 11.9846C13.0768 11.2752 13.2616 10.6012 13.5512 9.98462H6V12.4662L10 15.4969V42.0154H38V15.5321L42.5 12.5014V9.98462H24.4488C24.7384 10.6012 24.9232 11.2752 24.9807 11.9846H39.687L36 14.4678V40.0154H12V14.5031L8.67616 11.9846H13.0193Z"
+                          fill="#fff" />
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M20 26H16V30H20V26ZM14 24V32H22V24H14Z"
+                          fill="#fff" />
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M32 26H26V40H32V26ZM24 24V42H34V24H24Z"
+                          fill="#fff" />
+                        <path
+                          d="M6 41C6 41.5523 6.44772 42 7 42H41C41.5523 42 42 41.5523 42 41C42 40.4477 41.5523 40 41 40H7C6.44772 40 6 40.4477 6 41Z"
+                          fill="#fff" />
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M15 16H10V14H15V16Z" fill="#fff" />
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M37.5 16H23V14H37.5V16Z" fill="#fff" />
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                          d="M25 12C25 15.3137 22.3137 18 19 18C15.6863 18 13 15.3137 13 12C13 8.68629 15.6863 6 19 6C22.3137 6 25 8.68629 25 12ZM20 9V11H22V13H20V15H18V13H16V11H18V9H20Z"
+                          fill="#fff" />
                       </svg>
                     </span>
                   </div>
@@ -109,15 +124,23 @@
             </div>
 
             <div class="pt-6">
-              <div class="flow-root rounded-lg px-6 pb-8">
+              <div class="flow-root px-6 pb-8 rounded-lg">
                 <div class="-mt-6">
                   <div>
-                    <span class="inline-flex items-center justify-center rounded-md bg-yellow-500 p-3 shadow-lg">
-                      <!-- Heroicon name: outline/refresh -->
-                      <svg class="h-6 w-6 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                        stroke="currentColor" aria-hidden="true">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                          d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
+                    <span class="inline-flex justify-center items-center p-2 bg-yellow-500 rounded-md shadow-lg">
+                      <!-- https://healthicons.org/icon/outline/devices/mobile -->
+                      <svg class="w-8 h-8 text-white" viewBox="0 0 48 48" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                          d="M31.9635 6.33869L15.9636 6.35179C15.4113 6.35224 14.9639 6.80032 14.9644 7.35261L14.9922 41.3526C14.9927 41.9049 15.4408 42.3522 15.993 42.3518L31.993 42.3387C32.5453 42.3382 32.9927 41.8901 32.9922 41.3379L32.9644 7.33787C32.9639 6.78558 32.5158 6.33823 31.9635 6.33869ZM15.9619 4.35179C14.3051 4.35315 12.963 5.69739 12.9644 7.35425L12.9922 41.3542C12.9936 43.0111 14.3378 44.3531 15.9947 44.3518L31.9947 44.3387C33.6515 44.3373 34.9936 42.9931 34.9922 41.3362L34.9644 7.33623C34.963 5.67938 33.6188 4.33733 31.9619 4.33869L15.9619 4.35179Z"
+                          fill="#fff" />
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                          d="M16.9644 7.35107C16.4121 7.35152 15.9648 7.7996 15.9652 8.35189L15.9873 35.3519C15.9878 35.9042 16.4359 36.3515 16.9881 36.3511L30.9881 36.3396C31.5404 36.3391 31.9878 35.8911 31.9873 35.3388L31.9652 8.33878C31.9648 7.7865 31.5167 7.33915 30.9644 7.3396L16.9644 7.35107ZM23.1921 27.5395L23.1923 27.5397L23.982 28.1963L24.7699 27.544L24.7702 27.5437L24.7861 27.5305L24.7864 27.5302C26.3656 26.2151 27.6643 25.1337 28.5707 24.1175C29.4785 23.0998 29.9766 22.1648 29.9758 21.147C29.9745 19.4907 28.553 18.1925 26.7426 18.194C25.7184 18.1948 24.7334 18.6325 24.0914 19.3233L23.9744 19.4492L23.8572 19.3235C23.2141 18.6337 22.2283 18.1977 21.2042 18.1985C19.3937 18.2 17.9745 19.5006 17.9758 21.1568C17.9766 22.1747 18.4764 23.1088 19.3858 24.1243C20.297 25.1418 21.6033 26.2237 23.1921 27.5395Z"
+                          fill="#fff" />
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                          d="M23.9922 41.3453C25.0968 41.3444 25.9915 40.4482 25.9906 39.3436C25.9897 38.2391 25.0935 37.3444 23.989 37.3453C22.8844 37.3462 21.9897 38.2424 21.9906 39.3469C21.9915 40.4515 22.8877 41.3462 23.9922 41.3453Z"
+                          fill="#fff" />
+                      </svg>
                       </svg>
                     </span>
                   </div>
@@ -135,10 +158,10 @@
 
     <!-- BEGIN section 3 -->
     <div class="bg-white">
-      <div class="max-w-7xl mx-auto py-12 px-4 text-center sm:px-6 lg:px-8 lg:py-24">
+      <div class="py-12 px-4 mx-auto max-w-7xl text-center sm:px-6 lg:py-24 lg:px-8">
         <div class="space-y-12">
-          <div class="space-y-5 sm:mx-auto sm:max-w-xl sm:space-y-4 lg:max-w-5xl">
-            <h2 class="text-3xl font-extrabold tracking-tight sm:text-4xl text-gray-800">Meet our team</h2>
+          <div class="space-y-5 sm:mx-auto sm:space-y-4 sm:max-w-xl lg:max-w-5xl">
+            <h2 class="text-3xl font-extrabold tracking-tight text-gray-800 sm:text-4xl">Meet our team</h2>
             <p class="text-xl text-gray-500">We’re a small-and-mighty team of seasoned technologists applying our
               expertise to help governments and healthcare organizations improve the health and well-being of the
               communities they serve.</p>
@@ -147,9 +170,9 @@
             class="mx-auto space-y-16 sm:grid sm:grid-cols-2 sm:gap-16 sm:space-y-0 lg:grid-cols-3 lg:max-w-5xl">
             <li>
               <div class="space-y-6">
-                <img class="mx-auto h-40 w-40 rounded-full xl:w-56 xl:h-56" src="/assets/images/eric.jpeg" alt="">
+                <img class="mx-auto w-40 h-40 rounded-full xl:w-56 xl:h-56" src="/assets/images/eric.jpeg" alt="">
                 <div class="space-y-2">
-                  <div class="text-lg leading-6 font-medium space-y-1">
+                  <div class="space-y-1 text-lg font-medium leading-6">
                     <h3>Eric Guroff</h3>
                     <p class="text-yellow-500">Founder &amp; CEO</p>
                   </div>
@@ -172,9 +195,9 @@
 
             <li>
               <div class="space-y-6">
-                <img class="mx-auto h-40 w-40 rounded-full xl:w-56 xl:h-56" src="/assets/images/jesse.jpeg" alt="">
+                <img class="mx-auto w-40 h-40 rounded-full xl:w-56 xl:h-56" src="/assets/images/jesse.jpeg" alt="">
                 <div class="space-y-2">
-                  <div class="text-lg leading-6 font-medium space-y-1">
+                  <div class="space-y-1 text-lg font-medium leading-6">
                     <h3>Jesse Cooke</h3>
                     <p class="text-yellow-500">Founder &amp; CTO</p>
                   </div>
@@ -208,9 +231,9 @@
 
             <li>
               <div class="space-y-6">
-                <img class="mx-auto h-40 w-40 rounded-full xl:w-56 xl:h-56" src="/assets/images/pat.jpeg" alt="">
+                <img class="mx-auto w-40 h-40 rounded-full xl:w-56 xl:h-56" src="/assets/images/pat.jpeg" alt="">
                 <div class="space-y-2">
-                  <div class="text-lg leading-6 font-medium space-y-1">
+                  <div class="space-y-1 text-lg font-medium leading-6">
                     <h3>Pat Maddox</h3>
                     <p class="text-yellow-500">Founding Staff Engineer</p>
                   </div>
@@ -233,9 +256,9 @@
 
             <li>
               <div class="space-y-6">
-                <img class="mx-auto h-40 w-40 rounded-full xl:w-56 xl:h-56" src="/assets/images/kenichi.jpeg" alt="">
+                <img class="mx-auto w-40 h-40 rounded-full xl:w-56 xl:h-56" src="/assets/images/kenichi.jpeg" alt="">
                 <div class="space-y-2">
-                  <div class="text-lg leading-6 font-medium space-y-1">
+                  <div class="space-y-1 text-lg font-medium leading-6">
                     <h3>Kenichi Nakamura</h3>
                     <p class="text-yellow-500">Staff Engineer</p>
                   </div>
@@ -269,9 +292,9 @@
 
             <li>
               <div class="space-y-6">
-                <img class="mx-auto h-40 w-40 rounded-full xl:w-56 xl:h-56" src="/assets/images/rob.jpeg" alt="">
+                <img class="mx-auto w-40 h-40 rounded-full xl:w-56 xl:h-56" src="/assets/images/rob.jpeg" alt="">
                 <div class="space-y-2">
-                  <div class="text-lg leading-6 font-medium space-y-1">
+                  <div class="space-y-1 text-lg font-medium leading-6">
                     <h3>Rob Mee</h3>
                     <p class="text-yellow-500">Board Member</p>
                   </div>
@@ -299,14 +322,14 @@
 
     <!-- BEGIN section 4 -->
     <div class="bg-white">
-      <div class="max-w-7xl mx-auto text-center py-12 px-4 sm:px-6 lg:py-16 lg:px-8">
+      <div class="py-12 px-4 mx-auto max-w-7xl text-center sm:px-6 lg:py-16 lg:px-8">
         <h2 class="text-3xl font-extrabold tracking-tight text-gray-800 sm:text-4xl">
           <span class="block">We're ready to help you solve your messiest data and integration challenges.</span>
         </h2>
-        <div class="mt-8 flex justify-center">
+        <div class="flex justify-center mt-8">
           <div class="inline-flex rounded-md shadow">
             <a href="https://calendly.com/eric-ratio/30min"
-              class="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-white bg-yellow-600 hover:bg-yellow-700">Let's
+              class="inline-flex justify-center items-center py-3 px-5 text-base font-medium text-white bg-yellow-600 rounded-md border border-transparent hover:bg-yellow-700">Let's
               Talk</a>
           </div>
         </div>
