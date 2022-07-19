@@ -1,166 +1,187 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" integrity="sha512-wnea99uKIC3TJF7v4eKk4Y+lMz2Mklv18+r4na2Gn1abDRPPOeef95xTzdwGD9e6zXJBteMIhZ1+68QC5byJZw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="shortcut icon" type="image/png" href="/favicon.png" />
 
-    <style>
-      body {
-        background-color: #f5f3f0;
-      }
-      table th, table td {
-        padding: 1rem;
-      }
-    </style>
-    <title>Ratio's Service Level Agreements (SLA)</title>
-  </head>
-  <body>
-    <div class="min-h-screen py-6 flex flex-col justify-center sm:py-12">
-      <div class="relative py-3 sm:max-w-7xl sm:mx-auto">
-        <div
-          class="relative px-4 py-10 bg-white shadow-lg sm:rounded-3xl sm:p-20"
-        >
-          <div class="max-w-full mx-auto">
-            <div class="flex items-center">
-              <img src="/logo.png" alt="Ratio" />
-            </div>
-            <table class="table-auto">
-              <thead>
-                <tr class="bg-gray-500 text-white">
-                  <th>Severity</th>
-                  <th>Description</th>
-                  <th>Typical Response</th>
-                  <th>SLA</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td class="bg-red-200 font-bold text-red-400">SEV-1</td>
-                  <td class="align-top">
-                    <strong class="text-blue-400">Critical issue that warrants public notification and liason with executive teams</strong>
-                    <ul class="list-disc list-inside">
-                      <li>The system is in a critical state and is actively impacting a large number of customers</li>
-                      <li>Functionality has been severely impaired for a long time, breaking SLA's</li>
-                      <li>Customer-data-exposing security vulnerability has been detected</li>
-                    </ul>
-                  </td>
-                  <td class="align-top">
-                    <strong class="text-yellow-500">Major incident response</strong>
-                    <ul class="list-disc list-inside">
-                      <li>Page an incident commander</li>
-                      <li>Notify internal stakeholders</li>
-                      <li>Notify public</li>
-                    </ul>
-                  </td>
-                  <td class="align-top">
-                    <strong>Acknowledgement to stakeholders within 3 hours; resolution ASAP</strong>
-                  </td>
-                </tr>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css"
+    integrity="sha512-wnea99uKIC3TJF7v4eKk4Y+lMz2Mklv18+r4na2Gn1abDRPPOeef95xTzdwGD9e6zXJBteMIhZ1+68QC5byJZw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="shortcut icon" type="image/png" href="/favicon.png" />
 
-                <tr>
-                  <td class="bg-yellow-100 font-bold text-yellow-400">SEV-2</td>
-                  <td class="align-top">
-                    <strong class="text-blue-400">Critical issue actively impacting ability to use products</strong>
-                    <ul class="list-disc list-inside">
-                      <li>Notification pipeline is severly impaired</li>
-                      <li>Incident response functionality (ack, resolve, etc.) is severely impaired</li>
-                      <li>Applications are unavailable or experiencing severe performance degradation for most users</li>
-                      <li>Monitoring of systems for major incident conditions is impaired</li>
-                      <li>Any other event to which a Ratio employee deems necessary of a response</li>
-                    </ul>
-                  </td>
-                  <td class="align-top">
-                    <strong class="text-yellow-500">Major incident response</strong>
-                    <ul class="list-disc list-inside">
-                      <li>Page an incident commander</li>
-                      <li>Notify internal stakeholders</li>
-                    </ul>
-                  </td>
-                  <td class="align-top">
-                    <strong>Acknowledgement during next business day, recommendation for action, if any, within 1 business day</strong>
-                  </td>
-                </tr>
+  <style>
+    body {
+      background-color: #f5f3f0;
+    }
 
-                <tr>
-                  <td class="bg-red-100 font-medium p-3 text-red-400" colspan="4">Anything above this line is considered a "Major Incident." The response process should be triggered for any major incident.</td>
-                </tr>
+    table th,
+    table td {
+      padding: 1rem;
+    }
+  </style>
+  <title>Ratio's Service Level Agreements (SLA)</title>
+</head>
 
-                <tr>
-                  <td class="bg-blue-100 font-bold text-blue-400">SEV-3</td>
-                  <td class="align-top">
-                    <strong class="text-blue-400">Stability of minor customer-impacting issues that require immediate attention from 
-                    service owners</strong>
-                    <ul class="list-disc list-inside">
-                      <li>Partial loss of functionality, not affecting majority of customers</li>
-                      <li>An incident that has the likelihood of becoming a SEV-2 if nothing is done</li>
-                      <li>No redundancy in a service (failure of 1 of more node will cause a SEV-2 or SEV-1 
-                      incident)</li>
-                    </ul>
-                  </td>
-                  <td class="align-top">
-                    <strong class="text-yellow-500">High Urgency message to team</strong>
-                    <ul class="list-disc list-inside">
-                      <li>Work on issue as top priority</li>
-                      <li>Work with engineers of affected systems to identify cause</li>
-                      <li>If related to recent deployment, roll back</li>
-                      <li>Monitor status to detect if/when it escalates</li>
-                      <li>Mention in internal communication methods if incident has the potential to escalate</li>
-                      <li>Trigger major incident response if necessary</li>
-                    </ul>
-                  </td>
-                  <td class="align-top">
-                    <strong>Acknowledgement during next business day, recommendation for action, if any, within 3 business days</strong>
-                  </td>
-                </tr>
+<body>
+  <div class="mx-auto max-w-7xl sm:px-6 lg:px-8">
+    <!-- BEGIN section 1 -->
+    <div class="overflow-hidden relative bg-white">
+      <div class="relative pt-6 pb-16 sm:pb-24">
+        <main class="px-4 mx-auto mt-16 max-w-7xl sm:mt-24">
 
-                <tr>
-                  <td class="bg-gray-100 font-bold text-gray-400">SEV-4</td>
-                  <td class="align-top">
-                    <strong class="text-blue-400">Minor issues requiring action but not affecting customer ability to use the product/system</strong>
-                    <ul class="list-disc list-inside">
-                      <li>Performance issues (delayes, etc)</li>
-                      <li>Individual host failure (i.e. one node in a cluster)</li>
-                      <li>Delayed job failure (not impacting event & notification pipeline)</li>
-                      <li>Cron failure (not impacting event & notification pipeline)</li>
-                    </ul>
-                  </td>
-                  <td class="align-top">
-                    <strong class="text-yellow-500">Low Urgency message to team</strong>
-                    <ul class="list-disc list-inside">
-                      <li>Work on the issue as your first priority but don't necessarily stop working on something in-progress</li>
-                      <li>Monitor status to detect if/when it escalates</li>
-                    </ul>
-                  </td>
-                  <td class="align-top">
-                    <strong>Acknowledgement during next business day, recommendation for action, if any, within 5 business days</strong>
-                  </td>
-                </tr>
-
-                <tr>
-                  <td class="bg-green-100 font-bold text-green-400">SEV-5</td>
-                  <td class="align-top">
-                    <strong class="text-blue-400">Cosmetic or minor issues or defects not affecting customers ability to use the product/system</strong>
-                    <ul class="list-disc list-inside">
-                      <li>Defects not impacting the immediate ability to use the product/system</li>
-                    </ul>
-                  </td>
-                  <td class="align-top">
-                    <strong class="text-yellow-500">Create ticket and prioritize with features and other defects</strong>
-                    <ul class="list-disc list-inside">
-                      <li>Assign both the ownner of the affected system and support</li>
-                    </ul>
-                  </td>
-                  <td class="align-top">
-                    <strong>Acknowledgement during next planning session, recommendation for action</strong>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
+          <div class="hidden">
+            <h1>Ratio</h1>
+            <h2>Public Benefit Company</h2>
           </div>
-        </div>
+          <div class="grid justify-center mb-8 sm:mb-0">
+            <img src="/assets/images/logo.png" alt="Ratio" />
+          </div>
+        </main>
       </div>
     </div>
-  </body>
+
+    <table class="table-auto bg-white">
+      <thead>
+        <tr class="bg-gray-500 text-white">
+          <th>Severity</th>
+          <th>Description</th>
+          <th>Typical Response</th>
+          <th>SLA</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="bg-red-200 font-bold text-red-400">SEV-1</td>
+          <td class="align-top">
+            <strong class="text-blue-400">Critical issue that warrants public notification and liason with
+              executive teams</strong>
+            <ul class="list-disc list-inside">
+              <li>The system is in a critical state and is actively impacting a large number of customers</li>
+              <li>Functionality has been severely impaired for a long time, breaking SLA's</li>
+              <li>Customer-data-exposing security vulnerability has been detected</li>
+            </ul>
+          </td>
+          <td class="align-top">
+            <strong class="text-yellow-500">Major incident response</strong>
+            <ul class="list-disc list-inside">
+              <li>Page an incident commander</li>
+              <li>Notify internal stakeholders</li>
+              <li>Notify public</li>
+            </ul>
+          </td>
+          <td class="align-top">
+            <strong>Acknowledgement to stakeholders within 3 hours; resolution ASAP</strong>
+          </td>
+        </tr>
+
+        <tr>
+          <td class="bg-yellow-100 font-bold text-yellow-400">SEV-2</td>
+          <td class="align-top">
+            <strong class="text-blue-400">Critical issue actively impacting ability to use products</strong>
+            <ul class="list-disc list-inside">
+              <li>Notification pipeline is severly impaired</li>
+              <li>Incident response functionality (ack, resolve, etc.) is severely impaired</li>
+              <li>Applications are unavailable or experiencing severe performance degradation for most users</li>
+              <li>Monitoring of systems for major incident conditions is impaired</li>
+              <li>Any other event to which a Ratio employee deems necessary of a response</li>
+            </ul>
+          </td>
+          <td class="align-top">
+            <strong class="text-yellow-500">Major incident response</strong>
+            <ul class="list-disc list-inside">
+              <li>Page an incident commander</li>
+              <li>Notify internal stakeholders</li>
+            </ul>
+          </td>
+          <td class="align-top">
+            <strong>Acknowledgement during next business day, recommendation for action, if any, within 1 business
+              day</strong>
+          </td>
+        </tr>
+
+        <tr>
+          <td class="bg-red-100 font-medium p-3 text-red-400" colspan="4">Anything above this line is considered a
+            "Major Incident." The response process should be triggered for any major incident.</td>
+        </tr>
+
+        <tr>
+          <td class="bg-blue-100 font-bold text-blue-400">SEV-3</td>
+          <td class="align-top">
+            <strong class="text-blue-400">Stability of minor customer-impacting issues that require immediate
+              attention from
+              service owners</strong>
+            <ul class="list-disc list-inside">
+              <li>Partial loss of functionality, not affecting majority of customers</li>
+              <li>An incident that has the likelihood of becoming a SEV-2 if nothing is done</li>
+              <li>No redundancy in a service (failure of 1 of more node will cause a SEV-2 or SEV-1
+                incident)</li>
+            </ul>
+          </td>
+          <td class="align-top">
+            <strong class="text-yellow-500">High Urgency message to team</strong>
+            <ul class="list-disc list-inside">
+              <li>Work on issue as top priority</li>
+              <li>Work with engineers of affected systems to identify cause</li>
+              <li>If related to recent deployment, roll back</li>
+              <li>Monitor status to detect if/when it escalates</li>
+              <li>Mention in internal communication methods if incident has the potential to escalate</li>
+              <li>Trigger major incident response if necessary</li>
+            </ul>
+          </td>
+          <td class="align-top">
+            <strong>Acknowledgement during next business day, recommendation for action, if any, within 3 business
+              days</strong>
+          </td>
+        </tr>
+
+        <tr>
+          <td class="bg-gray-100 font-bold text-gray-400">SEV-4</td>
+          <td class="align-top">
+            <strong class="text-blue-400">Minor issues requiring action but not affecting customer ability to use
+              the product/system</strong>
+            <ul class="list-disc list-inside">
+              <li>Performance issues (delayes, etc)</li>
+              <li>Individual host failure (i.e. one node in a cluster)</li>
+              <li>Delayed job failure (not impacting event & notification pipeline)</li>
+              <li>Cron failure (not impacting event & notification pipeline)</li>
+            </ul>
+          </td>
+          <td class="align-top">
+            <strong class="text-yellow-500">Low Urgency message to team</strong>
+            <ul class="list-disc list-inside">
+              <li>Work on the issue as your first priority but don't necessarily stop working on something
+                in-progress</li>
+              <li>Monitor status to detect if/when it escalates</li>
+            </ul>
+          </td>
+          <td class="align-top">
+            <strong>Acknowledgement during next business day, recommendation for action, if any, within 5 business
+              days</strong>
+          </td>
+        </tr>
+
+        <tr>
+          <td class="bg-green-100 font-bold text-green-400">SEV-5</td>
+          <td class="align-top">
+            <strong class="text-blue-400">Cosmetic or minor issues or defects not affecting customers ability to
+              use the product/system</strong>
+            <ul class="list-disc list-inside">
+              <li>Defects not impacting the immediate ability to use the product/system</li>
+            </ul>
+          </td>
+          <td class="align-top">
+            <strong class="text-yellow-500">Create ticket and prioritize with features and other defects</strong>
+            <ul class="list-disc list-inside">
+              <li>Assign both the ownner of the affected system and support</li>
+            </ul>
+          </td>
+          <td class="align-top">
+            <strong>Acknowledgement during next planning session, recommendation for action</strong>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</body>
+
 </html>
