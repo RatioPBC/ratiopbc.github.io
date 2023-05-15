@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import ratioIcon from '@/images/logos/ratioIcon.svg'
+import ratioIcon from '@/images/logos/ratio.svg'
 
 
 export function Logo(props) {
