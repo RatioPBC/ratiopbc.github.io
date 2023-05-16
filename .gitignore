@@ -33,3 +33,6 @@ yarn-error.log*
 
 # static export
 dist/*
+
+# used in GHA publish
+gh-pages
