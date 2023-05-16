@@ -35,5 +35,5 @@ jobs:
       - name: commit & push built files
         run: |
           cd gh-pages
-          git ci -am 'update gh-pages'
+          git commit -am 'update gh-pages'
           git push
