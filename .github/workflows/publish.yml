@@ -24,7 +24,7 @@ jobs:
           ref: gh-pages
           path: ./gh-pages
       - name: rsync built files
-        uses: |
+        run: |
           rsync -avz \
             --delete \
             --exclude CNAME \
@@ -33,7 +33,7 @@ jobs:
             --exclude .nojekyll \
             dist/ gh-pages/
       - name: commit & push built files
-        uses: |
+        run: |
           cd gh-pages
           git ci -am 'update gh-pages'
           git push
