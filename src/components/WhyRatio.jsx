@@ -158,7 +158,7 @@ function FeaturesDesktop() {
                     </Tab>
                   ),
                 }}
-                isActive={featureIndex === selectedIndex}
+                isActive={true}
                 className="relative"
               />
             ))}

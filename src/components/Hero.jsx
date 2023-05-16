@@ -1,5 +1,3 @@
-import Image from 'next/image'
-
 import { Button } from '@/components/Button'
 import { Container } from '@/components/Container'
 
@@ -13,9 +11,9 @@ export function Hero() {
       We design, build, and operate secure, resilient, and human-centered software and data systems that empower health and human services organizations to improve the health and well-being of the communities they serve.
       </p>
       <div className="mt-10 flex justify-center gap-x-6">
-        <Button href="/register">Get in touch</Button>
+        <Button href="mailto:hello@ratiopbc.com" color="ink">Get in touch</Button>
         <Button
-          href="ratiopbc.com"
+          href="#services"
           variant="outline"
         >
           <span className="ml-3">How we help</span>

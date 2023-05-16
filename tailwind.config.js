@@ -39,6 +39,7 @@ module.exports = {
         'platinum': '#bfc3ca',
         'sunset': '#e9a753',
         'ink': '#4d5f75',
+        'ink-light': '#6c85a7',
       }
     },
   },

@@ -98,21 +98,11 @@ export function Header() {
             <Link href="#" aria-label="Home">
               <Logo className="h-20 w-auto" />
             </Link>
-            <div className="hidden md:flex md:gap-x-6">
-              <NavLink href="#features">Blog</NavLink>
-            </div>
           </div>
           <div className="flex items-center gap-x-5 md:gap-x-8">
             <div className="hidden md:block">
             </div>
-            <Button href="/register" color="dark-gray">
-              <span>
-                Get in <span className="hidden lg:inline">touch</span>
-              </span>
-            </Button>
-            <div className="-mr-1 md:hidden">
-              <MobileNavigation />
-            </div>
+            <Button href="mailto:hello@ratiopbc.com" color="ink">Get in touch</Button>
           </div>
         </nav>
       </Container>

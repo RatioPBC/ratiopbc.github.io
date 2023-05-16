@@ -1,8 +1,5 @@
-import Image from 'next/image'
-
 import { Button } from '@/components/Button'
 import { Container } from '@/components/Container'
-import backgroundImage from '@/images/background-call-to-action.jpg'
 
 export function CallToAction() {
   return (
@@ -15,7 +12,7 @@ export function CallToAction() {
           <h2 className="font-display text-3xl tracking-tight text-white sm:text-4xl">
             Ready to connect?
           </h2>
-          <Button href="/register" color="white" className="mt-10">
+          <Button href="mailto:hello@ratiopbc.com" color="white" className="mt-10">
             Get in touch
           </Button>
         </div>
