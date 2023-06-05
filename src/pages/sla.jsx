@@ -76,7 +76,7 @@ export default function SLA()
               </tr>
 
               <tr>
-                <td className="bg-red-100 font-medium p-3 text-red-400" colspan="4">Anything above this line is considered a
+                <td className="bg-red-100 font-medium p-3 text-red-400" colSpan="4">Anything above this line is considered a
                   "Major Incident." The response process should be triggered for any major incident.</td>
               </tr>
 
