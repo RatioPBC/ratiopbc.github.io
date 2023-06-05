@@ -23,7 +23,7 @@ export default function Home() {
           content="We design, build, and operate mission critical software and data systems for health and human services organizations."
         />
       </Head>
-      <Header />
+      <Header logoHref="#" />
       <main>
         <Hero />
         <Services />
