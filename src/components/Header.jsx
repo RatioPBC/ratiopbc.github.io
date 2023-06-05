@@ -89,14 +89,13 @@ function MobileNavigation() {
   )
 }
 
-export function Header(props) {
-  let logoHref = props.logoHref || "/";
+export function Header() {
   return (
     <header className="py-10">
       <Container>
         <nav className="relative z-50 flex justify-between">
           <div className="flex items-center md:gap-x-12">
-            <Link href={logoHref} aria-label="Home">
+            <Link href="/" aria-label="Home">
               <Logo className="h-20 w-auto" />
             </Link>
           </div>
