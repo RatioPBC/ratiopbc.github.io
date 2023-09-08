@@ -21,7 +21,7 @@ export default function Home() {
       <Header />
       <main>
         <Hero />
-        <p>
+        <p class="mx-auto max-w-4xl font-display text-5xl font-medium tracking-tight text-slate-900 sm:text-7xl">
           We are reworking our blog, please check back soon!
         </p>
         <CallToAction />
