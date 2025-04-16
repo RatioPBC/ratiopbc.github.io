@@ -16,7 +16,7 @@ export default function Redirect() {
     <>
       <Head>
         <meta httpEquiv="refresh" content={`0; url=${redirectUrl}`} />
-        <title>Redirecting...</title>
+        <title>Redirecting to Jesse's calendar...</title>
       </Head>
       <Header />
       <main>
