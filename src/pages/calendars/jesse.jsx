@@ -32,7 +32,9 @@ export default function Redirect() {
               </h2>
               <p className="mt-4 text-lg tracking-tight text-slate-700">
                 If you are not redirected automatically,{" "}
-                <a href={redirectUrl}>click here</a>.
+                <a class="underline hover:no-underline" href={redirectUrl}>
+                  click here
+                </a>.
               </p>
             </div>
           </Container>
