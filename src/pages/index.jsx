@@ -17,10 +17,13 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Ratio PBC - Software and data consultancy supporting health and human services organizations.</title>
+        <title>
+          Ratio PBC - Software and data consultancy for public sector and
+          specialized industries.
+        </title>
         <meta
           name="description"
-          content="We design, build, and operate mission critical software and data systems for health and human services organizations."
+          content="We design, build, and operate mission critical software and data systems for public sector and specialized industries."
         />
       </Head>
       <Header />

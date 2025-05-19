@@ -6,7 +6,7 @@ export function Services()
   <div className="mx-auto max-w-7xl px-6 lg:px-8">
     <div className="mx-auto max-w-2xl lg:text-center">
       <p className="mt-2 text-3xl font-bold tracking-tight text-cream sm:text-4xl">Services</p>
-      <p className="mt-6 text-lg leading-8 text-cream">Health and human services organizations bring Ratio their toughest data integration and system modernization challenges. Here's how we help.</p>
+      <p className="mt-6 text-lg leading-8 text-cream">Public and private sector organizations bring Ratio their toughest data integration and system modernization challenges. Here's how we help.</p>
     </div>
     <div className="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-4xl">
       <dl className="grid max-w-xl grid-cols-1 gap-x-8 gap-y-10 lg:max-w-none lg:grid-cols-2 lg:gap-y-16">

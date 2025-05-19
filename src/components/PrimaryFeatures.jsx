@@ -81,7 +81,9 @@ export function PrimaryFeatures() {
           Services
           </h2>
           <p className="mt-6 text-lg tracking-tight text-blue-100">
-          Health and human services organizations bring Ratio their toughest data integration and system modernization challenges. Here's how we help.
+            Public and prive sector organizations bring Ratio their toughest
+            data integration and system modernization challenges. Here's how we
+            help.
           </p>
         </div>
         <Tab.Group

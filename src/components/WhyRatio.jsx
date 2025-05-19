@@ -9,9 +9,10 @@ import { Container } from '@/components/Container'
 const features = [
   {
     name: 'Domain Experts',
-    summary: "We're focused on health and human services.",
-    description:
-      'Unlike generalist technology vendors, our focus on health and human services organizations enables us to quickly understand context and get to work.',
+    summary: "We're focused on public sector and specialized industries.",
+    description: `Unlike generalist technology vendors, our deep understanding of public
+      sector organizations and specialized industries like healthcare enables
+      us to quickly understand context and get to work.`,
     icon: function ReportingIcon() {
       let id = useId()
       return (
@@ -42,10 +43,10 @@ const features = [
   },
   {
     name: 'Demos Over Memos',
-    summary:
-      'We deliver value early and often.',
-    description:
-      'There is no substitute for showing working software to the humans who will use it. We cut through ambiguity by delivering working software and iterating quickly, de-risking the traditional approach to software projects.',
+    summary: 'We deliver value early and often.',
+    description: `There is no substitute for showing working software to the humans
+      who will use it. We cut through ambiguity by delivering and iterating
+      quickly, de-risking the traditional approach to software projects.`,
     icon: function InventoryIcon() {
       return (
         <>
@@ -69,10 +70,10 @@ const features = [
   },
   {
     name: 'Foundations of Trust',
-    summary:
-      'We build trust through transparency.',
-    description:
-      "We strive to build authentic, collaborative relationships with our clients. We're confident enough in our expertise to be honest when things go wrong or we don't know the answer.",
+    summary: 'We build trust through transparency.',
+    description: `We strive to build authentic, collaborative relationships with our clients.
+      We're confident enough in our expertise to be honest when things go wrong
+      or we don't know the answer.`,
     icon: function ContactsIcon() {
       return (
         <>
