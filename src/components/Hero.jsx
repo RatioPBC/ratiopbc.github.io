@@ -9,9 +9,9 @@ export function Hero() {
         industries.
       </h1>
       <p className="mx-auto mt-6 max-w-2xl text-lg tracking-tight text-slate-700">
-        We design, build, and operate secure, resilient, and human-centered
-        software and data systems for public sector organizations, non-profits
-        and specialized industries including healthcare, biotechnology,
+        We design, build, and operate secure, resilient, human-centered software
+        and data systems for public sector organizations, non-profits and
+        specialized industries including - healthcare, biotechnology,
         pharmaceutical, and deep tech companies.
       </p>
       <div className="mt-10 flex justify-center gap-x-6">
