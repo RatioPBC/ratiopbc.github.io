@@ -32,9 +32,9 @@ export default function DemoTos() {
           2. Description of Service
         </h3>
         <p className="whitespace-normal">
-          This Demo is provided solely for demonstration purposes at a
-          conference event. It is not intended for production use or to provide
-          any ongoing services beyond the demonstration period.
+          This Demo is provided solely for demonstration purposes. It is not
+          intended for production use or to provide any ongoing services beyond
+          the demonstration period.
         </p>
         <h3 className="text-text-100 -mb-1.5 mt-1 text-lg font-bold" level="3">
           3. Demo Status
@@ -217,7 +217,8 @@ export default function DemoTos() {
         </h3>
         <p className="whitespace-normal">
           For questions about these Terms or Privacy Policy, please contact the
-          demonstrator directly at the conference event.
+          demonstrator directly{" "}
+          <a href="mailto:support@ratiopbc.com">support@ratiopbc.com</a>.
         </p>
         <hr />
         <p className="whitespace-normal">
